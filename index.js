@@ -3,17 +3,15 @@ module.exports = {
   root: true,
   rules: {
     'comma-dangle': ['error', {
-      'arrays': 'always-multiline',
-      'objects': 'always-multiline',
-      'imports': 'always-multiline',
-      'exports': 'always-multiline',
-      'functions': 'never',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'never',
     }],
-    'no-continue': 0,
     'no-plusplus': 0,
     'no-process-env': 'error',
-    'radix': 0,
+    radix: 0,
     'valid-typeof': 0,
-    '': '',
   },
 };
