@@ -13,5 +13,8 @@ module.exports = {
     'no-process-env': 'error',
     radix: 0,
     'valid-typeof': 0,
+    'no-underscore-dangle': ['error', {
+      allowAfterThis: true,
+    }],
   },
 };
