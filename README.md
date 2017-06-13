@@ -67,6 +67,19 @@ This module is based on the [Airbnb JavaScript Style Guide](https://github.com/a
 
 * `valid-typeof`: usage of the `typeof` operator is allowed.
 
+* `no-underscore-dangle`: dangling underscores in members of the
+  `this` object is allowed.
+
+  ```json
+  {
+    "rules": {
+      "no-underscore-dangle": ["error", {
+        "allowAfterThis": true
+      }]
+    }
+  }
+  ```
+
 ## Unit Tests
 
 The [`mocha`](https://mochajs.org/) test runner uses various patterns that may result in code that violates the `airbnb` style guide.  This module provides additional overrides for unit tests written for `mocha`.
