@@ -18,6 +18,11 @@ Then create an `.eslintrc` file to utilize the module:
 }
 ```
 
+* Refer to [ts-tool-microservice-boilerplate](https://github.com/tetrascience/ts-tool-microservice-boilerplate#setup) for instructions on how to enable that on webstorm
+  * Make sure that `eslint` is installed has a `devDependency`
+  ```sh
+  $ npm install eslint -D
+  ```
 ## Style Guide
 
 This module is based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), and derives from [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb).  There are several overrides to the base module:
