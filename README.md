@@ -23,6 +23,7 @@ Then create an `.eslintrc` file to utilize the module:
   ```sh
   $ npm install eslint -D
   ```
+
 ## Style Guide
 
 This module is based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), and derives from [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb).  There are several overrides to the base module:
@@ -150,3 +151,28 @@ Simply, create an `.eslintrc` file in your "/test" directory that looks like thi
     }
   }
   ```
+
+## Libraries
+
+Node.js packages that are basic libraries may have a need to use slightly different styles than a larger, deployable application.
+
+### Usage
+
+```json
+{
+  "extends": "tetrascience/lib"
+}
+```
+
+### Overrides
+
+* `strict`: usage of `"use strict"` is at the discretion of the library author.
+
+  ```json
+  {
+    "rules": {
+      "strict": 0
+    }
+  }
+  ```
+  
