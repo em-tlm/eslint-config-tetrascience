@@ -2,6 +2,14 @@
 
 A module of ES Lint rules for enforcing the TetraScience ECMAScript style guide.
 
+__Table of Contents__
+
+* [Usage](#usage)
+* [Style Guide](#style-guide)
+* [Supersets](#supersets)
+  + [Unit Tests](#unit-tests)
+  + [Libraries](#libraries)
+
 ## Usage
 
 First, install the module as a `devDependency`:
@@ -86,11 +94,15 @@ This module is based on the [Airbnb JavaScript Style Guide](https://github.com/a
   }
   ```
 
-## Unit Tests
+## Supersets
+
+There are contexts where the base style guide adds restrictions that are not practical for the environment in which the code is run, or how the code will be consumed.  The `tetrascience` linter rules provide supersets to accomodate these situations.
+
+### Unit Tests
 
 The [`mocha`](https://mochajs.org/) test runner uses various patterns that may result in code that violates the `airbnb` style guide.  This module provides additional overrides for unit tests written for `mocha`.
 
-### Usage
+#### Usage
 
 Simply, create an `.eslintrc` file in your "/test" directory that looks like this:
 
@@ -100,7 +112,7 @@ Simply, create an `.eslintrc` file in your "/test" directory that looks like thi
 }
 ```
 
-### Overrides
+#### Overrides
 
 * `func-names`: a `function` does not require a name.
 
@@ -152,11 +164,11 @@ Simply, create an `.eslintrc` file in your "/test" directory that looks like thi
   }
   ```
 
-## Libraries
+### Libraries
 
 Node.js packages that are basic libraries may have a need to use slightly different styles than a larger, deployable application.
 
-### Usage
+#### Usage
 
 ```json
 {
@@ -164,7 +176,7 @@ Node.js packages that are basic libraries may have a need to use slightly differ
 }
 ```
 
-### Overrides
+#### Overrides
 
 * `strict`: usage of `"use strict"` is at the discretion of the library author.
 
