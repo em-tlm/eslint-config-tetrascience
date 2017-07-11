@@ -15,7 +15,7 @@
     "errors"
   ],
   "license": "MIT",
-  "main": "./lib",
+  "main": "./index.js",
   "private": true,
   "repository": {
     "type": "git",
