@@ -9,6 +9,7 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'never',
     }],
+    'no-continue': 0,
     'no-plusplus': 0,
     'no-process-env': 'error',
     radix: 0,
