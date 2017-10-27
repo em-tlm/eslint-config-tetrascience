@@ -49,6 +49,28 @@ This module is based on the [Airbnb JavaScript Style Guide](https://github.com/a
   }
   ```
 
+* `func-style`: both function declarations and function expressions are allowed
+
+  ```json
+  {
+    "rules": {
+      "func-style": 0
+    }
+  }
+  ```
+
+
+* `no-use-before-define`: usage of the functions before they are defined is allowed.
+
+  ```json
+  {
+    "rules": {
+      "no-use-before-define": ["error", { "functions": false }]
+    }
+  }
+  ```
+
+
 * `no-plusplus`: usage of the `++` incrementing operator is allowed.
 
   ```json
@@ -187,4 +209,3 @@ Node.js packages that are basic libraries may have a need to use slightly differ
     }
   }
   ```
-  
