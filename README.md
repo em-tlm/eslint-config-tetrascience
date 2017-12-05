@@ -60,12 +60,12 @@ This module is based on the [Airbnb JavaScript Style Guide](https://github.com/a
   ```
 
 
-* `no-use-before-define`: usage of the functions before they are defined is allowed.
+* `no-use-before-define`: usage of the functions and variables before they are defined is allowed.
 
   ```json
   {
     "rules": {
-      "no-use-before-define": ["error", { "functions": false }]
+      "no-use-before-define": ["error", { "functions": false, "variables": false }]
     }
   }
   ```
