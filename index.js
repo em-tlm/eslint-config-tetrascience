@@ -11,7 +11,7 @@ module.exports = {
     }],
     'func-style': 0,
     'no-continue': 0,
-    'no-use-before-define': ['error', { 'functions': false }],
+    'no-use-before-define': ['error', { 'functions': false, 'variables': false }],
     'no-plusplus': 0,
     'no-process-env': 'error',
     radix: 0,
