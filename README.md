@@ -50,6 +50,12 @@ $ yarn add tetrascience/eslint-config-tetrascience#^1.3.0 --dev
 
 * or you can install `prettier` globally
 
+* create a `prettier.config.js` or `.prettierrc.js`
+  ```js
+  const prettierConfig = require('eslint-config-tetrascience/prettier.config');
+  module.exports = prettierConfig;
+  ```
+
 * Refer to https://prettier.io/docs/en/editors.html for instructions
   on how to integrate `prettier` with editors.
 
