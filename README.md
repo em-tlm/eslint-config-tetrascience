@@ -48,6 +48,8 @@ $ yarn add tetrascience/eslint-config-tetrascience#^1.3.0 --dev
   $ yarn add prettier --dev
   ```
 
+* or you can install `prettier` globally
+
 * Refer to https://prettier.io/docs/en/editors.html for instructions
   on how to integrate `prettier` with editors.
 
