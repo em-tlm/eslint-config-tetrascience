@@ -12,13 +12,19 @@ __Table of Contents__
 
 ## Usage
 
-First, install the module as a `devDependency`:
+### install the module as a `devDependency`
 
 ```sh
 $ npm install tetrascience/eslint-config-tetrascience -D
 ```
 
-Then create an `.eslintrc` file to utilize the module:
+or
+
+```sh
+$ yarn add tetrascience/eslint-config-tetrascience#^1.3.0 --dev
+```
+
+### create an `.eslintrc` file to utilize the module
 
 ```json
 {
@@ -26,39 +32,28 @@ Then create an `.eslintrc` file to utilize the module:
 }
 ```
 
-* Refer to [ts-tool-microservice-boilerplate](https://github.com/tetrascience/ts-tool-microservice-boilerplate#setup) for instructions on how to enable that on webstorm
-  * Make sure that `eslint` is installed has a `devDependency`
+### setup `eslint`
+* install `eslint` as a `devDependency`
+
   ```sh
-  $ npm install eslint -D
+  $ yarn add eslint --dev
   ```
+
+* Refer to [ts-tool-microservice-boilerplate](https://github.com/tetrascience/ts-tool-microservice-boilerplate#setup) for instructions on how to enable that on webstorm
+
+### setup `prettier`
+
+* install `prettier` as a `devDependency`
+  ```sh
+  $ yarn add prettier --dev
+  ```
+
+* Refer to https://prettier.io/docs/en/editors.html for instructions
+  on how to integrate `prettier` with editors.
 
 ## Style Guide
 
 This module is based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), and derives from [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb).  There are several overrides to the base module:
-
-* `comma-dangle`: functions with multi-line parameter lists forbid dangling commas.
-
-  ```json
-  {
-    "rules": {
-      "comma-dangle": [
-        "error",
-        { "function": "never" }
-      ]
-    }
-  }
-  ```
-
-* `func-style`: both function declarations and function expressions are allowed
-
-  ```json
-  {
-    "rules": {
-      "func-style": 0
-    }
-  }
-  ```
-
 
 * `no-use-before-define`: usage of the functions and variables before they are defined is allowed.
 
@@ -69,7 +64,6 @@ This module is based on the [Airbnb JavaScript Style Guide](https://github.com/a
     }
   }
   ```
-
 
 * `no-plusplus`: usage of the `++` incrementing operator is allowed.
 
